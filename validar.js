@@ -3,8 +3,9 @@ function validar(){
   nombre = document.getElementById("nombre").value;
   email= document.getElementById("email").value;
   password= document.getElementById("password").value;
+  
+  // epresion que sera evaluada  para el e-mail
   expresion = /\w+@\w+\.+[a-z]/;
-
 
   if(nombre === "" || email === "" || password === ""){
     alert("Todos los campos son obligatorios");
@@ -18,7 +19,7 @@ function validar(){
     alert("El e-mail es muy largo");
     return false;
   }
-  else if(!expresion.test(email)){
+  else if(!expresion.test(email)){ //metodo test  que verifica sea igual  en el caso de que sea distinta//
     alert("e-mail no es valido");
   }
   else if(password.length > 20){

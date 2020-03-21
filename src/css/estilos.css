@@ -23,6 +23,7 @@ button{
     background-color: black;
     border: none;
     color: #fff200;
+    cursor: pointer;
 }
 .header{
     width: 100%;
@@ -74,7 +75,7 @@ button{
 .albums p{
     padding: 50px;
     color: white;
-    font-size: 70px;
+    font-size: 3em;
 
 }
 .form{
@@ -93,4 +94,35 @@ h2{
 }
 ::placeholder{
     color: black;
+}
+
+@media only screen and (max-width: 600px){
+    .header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    }
+
+    .logo{
+        display: block;
+        height:  100%;
+        width: 100%;
+        padding: 0px 100px;
+    }
+    .slogan{
+    display: none;
+
+    }
+    .albums{
+        display: none;
+    }
+    .login{
+    width: 100%;
+    padding: 0 30px;
+    min-height: calc(100vh - 250px);
+    background-color: #fff200;
+    }
+
 }
